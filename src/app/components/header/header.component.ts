@@ -17,5 +17,13 @@ export class HeaderComponent {
     this.app.showProducts = false;
     this.app.showContact = false;
   }
+  navigateToLogin() {
+    this.router.navigate(['iniciar-sesion'])
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showLogin = true;
+    this.app.showProducts = false;
+    this.app.showContact = false;
+  }
 
 }
