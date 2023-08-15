@@ -13,6 +13,7 @@ body{
 	color: lighten($black,50%);
 }
 a {
+  cursor: pointer;
 	transition: .3s all ease;
 	color: $primary;
 	&:hover, &:focus {

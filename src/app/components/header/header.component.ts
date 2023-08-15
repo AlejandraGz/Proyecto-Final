@@ -16,6 +16,7 @@ export class HeaderComponent {
     this.app.showLogin = false;
     this.app.showProducts = false;
     this.app.showContact = false;
+    this.app.showChangePassword = false;
   }
   navigateToLogin() {
     this.router.navigate(['iniciar-sesion'])
@@ -24,6 +25,7 @@ export class HeaderComponent {
     this.app.showLogin = true;
     this.app.showProducts = false;
     this.app.showContact = false;
+    this.app.showChangePassword = false;
   }
 
 }

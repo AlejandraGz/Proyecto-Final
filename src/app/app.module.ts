@@ -11,12 +11,14 @@ import { ContactComponent } from './views/contact/contact.component';
 import { ListOfProductsComponent } from './views/list-of-products/list-of-products.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ChangePasswordComponent } from './views/login/change-password/change-password.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'lista-de-productos', component: ListOfProductsComponent},
   {path: 'iniciar-sesion', component: LoginComponent},
   {path: 'contacto', component: ContactComponent},
+  {path: 'cambiar-contrasena', component: ChangePasswordComponent},
   {path: 'carrito-de-compras', component: ShoppingCartComponent}
 ]
 
@@ -30,7 +32,8 @@ const routes: Routes = [
     ContactComponent,
     ListOfProductsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ChangePasswordComponent
   ],
   imports: [
     BrowserModule,

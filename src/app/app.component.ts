@@ -11,10 +11,13 @@ export class AppComponent {
   showLogin: boolean = false;
   showProducts: boolean = false;
   showContact: boolean = false;
+  showChangePassword: boolean = false;
 
   ngOnInit() {
     this.showHome = true;
     this.showLogin = false;
     this.showProducts = false;
+    this.showContact = false;
+    this.showChangePassword = false;
   }
 }
