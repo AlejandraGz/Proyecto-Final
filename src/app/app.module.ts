@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './views/home/home.component';
@@ -12,7 +12,7 @@ import { ListOfProductsComponent } from './views/list-of-products/list-of-produc
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChangePasswordComponent } from './views/login/change-password/change-password.component';
-
+import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'lista-de-productos', component: ListOfProductsComponent},
@@ -38,7 +38,9 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     RouterModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

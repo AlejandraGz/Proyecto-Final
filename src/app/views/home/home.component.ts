@@ -20,6 +20,12 @@ export class HomeComponent {
     this.app.showProducts = false;
     this.app.showContact = true;
   }
+  navigateToLogin() {
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showProducts = false;
+    this.app.showLogin = true;
+  }
   ngOnInit() {
     this.router.navigate(['/'])
     this.app.showHome = true;
