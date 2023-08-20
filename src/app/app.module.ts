@@ -13,6 +13,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChangePasswordComponent } from './views/login/change-password/change-password.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BrunchComponent } from './views/list-of-products/brunch/brunch.component';
+import { FastFoodComponent } from './views/list-of-products/fast-food/fast-food.component';
+import { DessertsComponent } from './views/list-of-products/desserts/desserts.component';
+import { RestaurantComponent } from './views/list-of-products/restaurant/restaurant.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'lista-de-productos', component: ListOfProductsComponent},
@@ -33,7 +37,11 @@ const routes: Routes = [
     ListOfProductsComponent,
     HeaderComponent,
     FooterComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    BrunchComponent,
+    FastFoodComponent,
+    DessertsComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
