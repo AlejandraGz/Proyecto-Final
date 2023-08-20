@@ -1,21 +1,19 @@
 .header {
   background-color: #fff;
-  padding: 35px 25px;
-  box-shadow: 0 15px 80px rgba(0, 0, 0, 0.048);
-
-  .logo {
-    font-weight: bold;
-    font-size: 24px;
-    color: #333;
-  }
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.048);
 
   a {
     color: #333;
     text-decoration: none;
     margin-left: 15px;
     cursor: pointer;
+
     &:hover {
       color: #7f7f7f;
+    }
+
+    .logo {
+      height: 100px;
     }
   }
 }

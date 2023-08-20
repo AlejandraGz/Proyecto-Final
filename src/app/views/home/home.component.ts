@@ -9,7 +9,22 @@ import { AppComponent } from 'src/app/app.component';
 })
 export class HomeComponent {
   constructor(private router: Router, private app: AppComponent){}
-  navigateToListOfProducts() {
+  navigateToBrunch() {
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showProducts = true;
+  }
+  navigateToFastFood() {
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showProducts = true;
+  }
+  navigateToDesserts() {
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showProducts = true;
+  }
+  navigateToRestaurant() {
     window.scrollTo(0, 0);
     this.app.showHome = false;
     this.app.showProducts = true;
