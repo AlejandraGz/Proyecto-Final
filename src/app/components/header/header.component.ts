@@ -17,6 +17,10 @@ export class HeaderComponent {
     this.app.showProducts = false;
     this.app.showContact = false;
     this.app.showChangePassword = false;
+    this.app.showBrunch = false;
+    this.app.showDesserts = false;
+    this.app.showFastFood = false;
+    this.app.showRestaurant = false;
   }
   navigateToLogin() {
     this.router.navigate(['iniciar-sesion'])
@@ -26,6 +30,42 @@ export class HeaderComponent {
     this.app.showProducts = false;
     this.app.showContact = false;
     this.app.showChangePassword = false;
+  }
+  navigateToBrunch() {
+    this.router.navigate(['/brunch'])
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showBrunch = true;
+    this.app.showDesserts = false;
+    this.app.showFastFood = false;
+    this.app.showRestaurant = false;
+  }
+  navigateToFastFood() {
+    this.router.navigate(['/rapidas'])
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showBrunch = false;
+    this.app.showDesserts = false;
+    this.app.showFastFood = true;
+    this.app.showRestaurant = false;
+  }
+  navigateToDesserts() {
+    this.router.navigate(['/postres'])
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showBrunch = false;
+    this.app.showDesserts = true;
+    this.app.showFastFood = false;
+    this.app.showRestaurant = false;
+  }
+  navigateToRestaurant() {
+    this.router.navigate(['/restaurante'])
+    window.scrollTo(0, 0);
+    this.app.showHome = false;
+    this.app.showBrunch = false;
+    this.app.showDesserts = false;
+    this.app.showFastFood = false;
+    this.app.showRestaurant = true;
   }
 
 }

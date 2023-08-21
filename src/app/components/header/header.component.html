@@ -8,9 +8,10 @@
         <a href="#" data-bs-toggle="dropdown">Tienda <i class="fas fa-caret-down"></i></a>
         <div class="dropdown-menu">
           <!-- Agrega los enlaces dentro del menú desplegable de Tienda -->
-          <a class="dropdown-item" href="#">Categoría 1</a>
-          <a class="dropdown-item" href="#">Categoría 2</a>
-          <a class="dropdown-item" href="#">Categoría 3</a>
+          <a class="dropdown-item" (click)="navigateToBrunch()" >Brunch</a>
+          <a class="dropdown-item" (click)="navigateToFastFood()">Rápidas</a>
+          <a class="dropdown-item" (click)="navigateToDesserts()">Postres</a>
+          <a class="dropdown-item" (click)="navigateToRestaurant()">Restaurante</a>
         </div>
         <a href="#">Puntos de Venta</a>
         <a routerLink="/" (click)="navigateToLogin()">Login</a>

@@ -19,7 +19,10 @@ import { DessertsComponent } from './views/list-of-products/desserts/desserts.co
 import { RestaurantComponent } from './views/list-of-products/restaurant/restaurant.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'lista-de-productos', component: ListOfProductsComponent},
+  {path: 'brunch', component: BrunchComponent},
+  {path: 'postres', component: DessertsComponent},
+  {path: 'rapidas', component: FastFoodComponent},
+  {path: 'restaurante', component: RestaurantComponent},
   {path: 'iniciar-sesion', component: LoginComponent},
   {path: 'contacto', component: ContactComponent},
   {path: 'cambiar-contrasena', component: ChangePasswordComponent},
